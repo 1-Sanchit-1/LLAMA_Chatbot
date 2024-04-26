@@ -1,0 +1,107 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+
+    <!-- vendor css & style files -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:300|Oxygen|Material+Icons"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <!-- <link rel="stylesheet" href="{% static 'css/particle.css' %}"> -->
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- <h1> Chatbot App </h1> -->
+    <!-- <div>
+        <div id="chatbot">
+            <p class="botText"><span>Hii There </span></p>
+        </div>
+        <div id="userinput">
+            <input type="text" name="userMessage" id="textInput" placeholder="Type your message ">
+            <input type="submit" value="Send" id="buttoninput">
+        </div>
+    </div> -->
+
+
+    <div class="container" style="margin-top: 5%;">
+
+        <div class="row padded_row">
+
+            <div id="chat-text-area" class="col-md-7 chat-text-area">
+
+                <div class="chat_window">
+
+                    <div class="top_menu">
+                        <div class="title">ChatBot - IIIT Lucknow </div>
+                    </div>
+
+                    <ul class="messages"></ul>
+                    <div class="bottom_wrapper">
+                        <input id="msg_input" placeholder="Say Hi to begin chat..." />
+                        <div id="send_button" class="app_button_1">Send</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <div>
+    
+      
+    
+    
+    <div>
+      
+      
+    
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+    </script>
+
+
+    <!-- <script>
+        function getUserResponse() {
+
+            var userText = $('#textInput').val();
+            var userHTML = "<p class='userText'> User: <span>" + userText + "</span></p>";
+            $('#textInput').val("");
+            $('#chatbot').append(userHTML);
+
+            $.get('../getResponse', { userMessage: userText }).done(function (data) {
+                var returnedMessage = "<p class='botText'> Chatbot: <span>" + data + "</span></p>";
+                $('#chatbot').append(returnedMessage);
+            })
+        }
+        $('#buttoninput').click(function () {
+            getUserResponse();
+        })
+
+    </script> -->
+
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+
+</html>

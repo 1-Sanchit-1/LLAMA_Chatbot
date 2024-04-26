@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block custom_css %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/particle.css' %}">
+
+{% endblock custom_css %}
+
+{% block content %}
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<div>
+<article id="info">
+ 
+<div id="particles-js"></div>
+
+</div>
+
+<header>
+ <div class="stars"></div>
+<div class="twinkle"></div>
+</header>
+
+<div id="intro">
+  <div id="mainText">
+    <h1 id="DelvinText">Delvin</h1>
+    <p style="color: azure;" >
+      <b>
+        The IIIT Lucknow chatbot is an AI-driven assistant providing information about IIIT Lucknow, assisting with admissions, courses, and events. It offers personalized support and quick access to FAQs, enhancing communication and accessibility.</p>  
+      </b>
+  </div>
+  <div class="wrapper">
+    <div class="link_wrapper">
+      <a href="{% url 'Chatbotapp:home' %}"><span>Let's get </span>started</a>
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+          <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+        </svg>
+      </div>
+    </div>
+    
+  </div>
+</div>
+ 
+{% comment %} <div id="particles">
+    <div id="intro">
+      <div id="mainText">
+        <h1 id="DelvinText">Delvin</h1>
+        <p style="color: azure;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus placeat voluptate sunt eius dicta fugiat magni maiores? Debitis ab quae ea, vero aspernatur qui dolorum accusamus. Minus reprehenderit ducimus atque, praesentium ratione voluptate provident harum exercitationem dignissimos aspernatur temporibus</p>  
+      </div>
+      <div class="wrapper">
+        <div class="link_wrapper">
+          <a href="{% url 'Chatbotapp:home' %}"><p>Let's get </p>started</a>
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+              <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+            </svg>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div> {% endcomment %}
+
+
+</article>
+  
+
+
+<div>
+  
+  
+
+
+{% endblock content %}
